@@ -3,23 +3,5 @@
 	email = onelson@gmail.com
 [color]
 	ui = true
-;[diff]
-;	external = git-meld
-[merge]
-	tool = meld
-[mergetool "meld"]
-	cmd = meld $BASE $LOCAL $REMOTE -o $MERGED
-	trustExitCode = false
-[alias]
-	switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
 [push]
 	default = simple
-[core]
-	excludesfile = /home/owen/.gitignore
