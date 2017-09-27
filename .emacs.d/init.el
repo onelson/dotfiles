@@ -32,3 +32,5 @@
 (require 'lang-rust)
 
 (require 'lang-c)
+
+(setq column-number-mode t)
