@@ -1,2 +1,4 @@
 .idea
-*
+.vim/plugged
+.vim/.netrwhist
+.emacs.d/*
