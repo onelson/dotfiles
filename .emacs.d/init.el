@@ -34,3 +34,5 @@
 (require 'lang-c)
 
 (setq column-number-mode t)
+(setq-default fill-column 80)
+
