@@ -69,4 +69,8 @@ endif
 
 nmap <M-up> {
 nmap <M-down> }
-
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
