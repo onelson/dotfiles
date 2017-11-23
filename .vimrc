@@ -84,8 +84,6 @@ let g:CtrlSpaceSaveWorkspaceOnExit = 1
 
 
 " movement, and editing
-nmap <M-up> {
-nmap <M-down> }
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
 inoremap <S-Tab> <C-D>
