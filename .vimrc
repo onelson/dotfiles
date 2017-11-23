@@ -9,6 +9,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'terryma/vim-expand-region'
+Plug 'gabrielelana/vim-markdown'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -51,6 +53,10 @@ let g:syntastic_check_on_wq = 0
 
 " Personal prefs
 :set number
+:set colorcolumn=80
+" trim trailing whitespace
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -58,6 +64,11 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" fugitive status line
+set statusline+=%{fugitive#statusline()}
+
+
 
 " stuff wanted for ctrl-space
 set nocompatible
