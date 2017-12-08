@@ -54,7 +54,7 @@ let g:syntastic_check_on_wq = 0
 " Personal prefs
 :set number
 :set colorcolumn=79
-:set autoreload
+:set autoread
 " trim trailing whitespace
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
