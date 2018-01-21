@@ -56,6 +56,7 @@ let g:syntastic_check_on_wq = 0
 :set colorcolumn=80
 " trim trailing whitespace
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+set pastetoggle=<F2>
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
