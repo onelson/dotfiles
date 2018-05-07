@@ -1,5 +1,5 @@
 set t_Co=256
-:colors zenburn
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -7,12 +7,15 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-syntastic/syntastic'
-Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'terryma/vim-expand-region'
 Plug 'gabrielelana/vim-markdown'
 Plug 'tpope/vim-fugitive'
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
+
+:colors nord
 
 au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
@@ -69,21 +72,6 @@ set expandtab
 
 " fugitive status line
 set statusline+=%{fugitive#statusline()}
-
-
-
-" stuff wanted for ctrl-space
-set nocompatible
-set showtabline=0
-
-if executable("ag")
-    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
-endif
-
-let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
-let g:CtrlSpaceSaveWorkspaceOnSwitch = 1
-let g:CtrlSpaceSaveWorkspaceOnExit = 1
-
 
 " movement, and editing
 nnoremap <Tab> >>_

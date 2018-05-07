@@ -7,3 +7,5 @@
 	default = simple
 [alias]
         map = log --graph --full-history --all --color --decorate
+[core]
+	excludesfile = ~/.gitignore
