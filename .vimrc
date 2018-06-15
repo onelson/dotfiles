@@ -15,7 +15,7 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-:colors nord
+:colorscheme nord
 
 au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
