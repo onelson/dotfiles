@@ -4,7 +4,6 @@ set t_Co=256
 call plug#begin('~/.vim/plugged')
 
 Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-syntastic/syntastic'
 Plug 'terryma/vim-expand-region'
@@ -16,11 +15,6 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 :colorscheme nord
-
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
 set hidden
 let g:racer_cmd = "~/.cargo/bin/racer"
@@ -52,7 +46,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_rust_checkers = ['cargo']
+let g:rustfmt_autosave = 1
 
 " Personal prefs
 :set number
