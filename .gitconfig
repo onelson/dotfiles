@@ -9,3 +9,5 @@
         map = log --graph --full-history --all --color --decorate
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
