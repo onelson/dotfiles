@@ -9,7 +9,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'terryma/vim-expand-region'
 Plug 'gabrielelana/vim-markdown'
 Plug 'tpope/vim-fugitive'
-Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
